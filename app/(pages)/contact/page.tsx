@@ -85,14 +85,14 @@ function page() {
       </div>
       <div className="max-w-350 m-auto px-10 mb-20">
         <iframe
-        allowfullscreen
+        allowFullScreen
           title="map"
           className="w-full h-[50vh]"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.47139691747!2d3.5378092!3d6.588177699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bef2b15eacff1%3A0xf15e48e262066f30!2sUnity%20avenue%20Balogun%20Estate%20Oreyo%20Igbogbo!5e0!3m2!1sen!2sng!4v1783238760670!5m2!1sen!2sng"
           width="600"
           height="450"
           loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
+          referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
     </div>

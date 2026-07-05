@@ -1,9 +1,10 @@
 "use client";
 
 import { logo } from "@/constants";
+import { useDynamicRouteParams } from "next/dist/server/app-render/dynamic-rendering";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -17,6 +18,7 @@ const navLinks = [
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <div className="relative bg-gray-100">
@@ -38,7 +40,10 @@ function Header() {
               </Link>
             ))}
           </div>
-          <button className="bg-[#003557] text-white py-2 px-4 rounded shrink-0">
+          <button className="bg-[#003557] text-white py-2 px-4 rounded shrink-0 cursor-pointer" onClick={() => {
+            router.push("/contact");
+            setMenuOpen(false);
+          }}>
             Book an Appointment
           </button>
         </div>
@@ -73,7 +78,10 @@ function Header() {
               {link.label}
             </Link>
           ))}
-          <button className="bg-[#003557] text-white py-2 px-4 rounded mt-2 w-full">
+          <button className="bg-[#003557] text-white py-2 px-4 rounded mt-2 w-full cursor-pointer" onClick={() => {
+            router.push("/contact");
+            setMenuOpen(false);
+          }}>
             Book an Appointment
           </button>
         </div>
