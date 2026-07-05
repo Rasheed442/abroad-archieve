@@ -58,22 +58,28 @@ function page() {
   return (
     <div>
       <div
-        className="h-[90.8vh] flex items-center justify-center bg-no-repeat bg-cover w-full "
+        className="flex h-[90.8vh] min-h-[480px] w-full items-center justify-center bg-cover bg-center bg-no-repeat px-4"
         style={{ backgroundImage: `url(${aboutus.heroab.src})` }}
       >
-        <p className="text-[52px] font-bold text-white">About Us</p>
+        <p className="animate-fade-up text-center text-[32px] font-bold text-white sm:text-[40px] md:text-[52px]">
+          About Us
+        </p>
       </div>
 
-      <div className="grid grid-cols-[50%_50%] px-10 mt-20  gap-4 place-items-center max-w-350 m-auto py-10">
-        <Image
-          src={aboutus.whoweare2}
-          alt="who we are"
-          width={500}
-          height={500}
-        />
-        <div className=" h-full flex flex-col gap-3 justify-center items-start p-8 px-14">
-          <p className="text-[#003557] text-[36px] font-bold">Why Choose Us</p>
-          <span className="text-[#003557] font-medium max-w-[600px]">
+      <div className="mx-auto mt-10 grid max-w-350 grid-cols-1 gap-6 px-4 py-10 md:mt-20 md:grid-cols-[50%_50%] md:px-10">
+        <div className="animate-fade-in relative aspect-square w-full max-w-[500px] overflow-hidden rounded-xl shadow-md">
+          <Image
+            src={aboutus.whoweare2}
+            alt="who we are"
+            fill
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="flex h-full flex-col items-start justify-center gap-3 p-4 md:p-8 md:px-14">
+          <p className="text-[#003557] text-[26px] md:text-[36px] font-bold">
+            Why Choose Us
+          </p>
+          <span className="text-[#003557] font-medium max-w-[600px] text-[15px] md:text-[16px] leading-relaxed">
             We are a dedicated agency specializing in recruiting students for
             international schools in the UK, Canada, Australia, and New Zealand.
             With over 7 years of experience, we pride ourselves on guiding
@@ -86,16 +92,17 @@ function page() {
           </span>
         </div>
       </div>
+
       <SubHeader
         title={"Our Comprehensive Services"}
         subtitle={"Complete support for every stage of your journey to studying abroad."}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 max-w-350 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 p-4 md:p-8 max-w-350 mx-auto">
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col gap-4 px-5 py-10 shadow-md rounded-md border border-gray-100 hover:shadow-xl transition duration-300"
+            className="hover-lift flex flex-col gap-4 rounded-md border border-gray-100 px-5 py-8 shadow-md transition duration-300 hover:shadow-xl md:py-10"
           >
             <Image
               src={service.icon.src}
@@ -103,38 +110,37 @@ function page() {
               width={40}
               height={40}
             />
-            <p className="text-[#003557] font-semibold text-[18.85px]">
+            <p className="text-[#003557] font-semibold text-[17px] md:text-[18.85px]">
               {service.title}
             </p>
-            <span className="text-gray-600 font-normal text-[16px]">
+            <span className="text-gray-600 font-normal text-[15px] md:text-[16px]">
               {service.description}
             </span>
           </div>
         ))}
       </div>
 
-      <div className="flex flex-col gap-2  h-[20vh] text-white pl-14 pt-20">
-        <p className="text-[#003557] font-semibold text-[28px] medium">
+      <div className="flex flex-col gap-2 text-white px-6 md:pl-14 pt-16 md:pt-20 pb-4">
+        <p className="text-[#003557] font-semibold text-[22px] md:text-[28px]">
           We'd love to hear from you
         </p>
-        <span className="text-[#003557] font-normal text-[16px] w-[50%]">
+        <span className="text-[#003557] font-normal text-[15px] md:text-[16px] w-full sm:w-[70%] md:w-[50%]">
           Our friendly team is always here to chat.
         </span>
       </div>
 
       {/* Contact options */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-14 pb-20 max-w-350 mx-auto pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-14 pb-20 max-w-350 mx-auto pt-10">
         {contactOptions.map((option, index) => {
           const Icon = option.icon;
           return (
             <div
               key={index}
-              className="flex flex-col gap-6 p-6 rounded-xl bg-[#EAF3FC]"
+              className="hover-lift flex flex-col gap-6 rounded-xl bg-[#EAF3FC] p-6"
             >
               <div className="h-11 w-11 rounded-lg bg-[#0B2A4A] flex items-center justify-center">
                 <Icon size={20} className="text-white" />
               </div>
-
               <div className="flex flex-col gap-2">
                 <p className="text-[#003557] font-semibold text-[17px]">
                   {option.title}

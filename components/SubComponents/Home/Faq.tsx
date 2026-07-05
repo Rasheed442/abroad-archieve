@@ -27,16 +27,15 @@ const faqs: FaqItem[] = [
   }
 ];
 
-// Rotating shape markers — purely a visual rhythm device, not a semantic sequence
 const shapes = ["circle", "diamond", "triangle"] as const;
 
-function ShapeIcon({ shape }: { shape: typeof shapes[number] }) {
+function ShapeIcon({ shape }: { shape: (typeof shapes)[number] }) {
   const base = "h-3 w-3 bg-[#8A8F98] shrink-0";
   if (shape === "circle") return <span className={`${base} rounded-full`} />;
   if (shape === "diamond") return <span className={`${base} rotate-45`} />;
   return (
     <span
-      className={`${base} bg-transparent border-l-[7px] border-r-[7px] border-b-[12px] border-l-transparent border-r-transparent border-b-[#8A8F98]`}
+      className={`${base} border-b-[12px] border-l-[7px] border-r-[7px] border-b-[#8A8F98] border-l-transparent border-r-transparent bg-transparent`}
     />
   );
 }
@@ -49,17 +48,15 @@ function Faq() {
   };
 
   return (
-    <div className="w-full py-42 px-6 md:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-6xl mx-auto items-start">
-        {/* Heading */}
-        <h2 className="text-[#003557] font-bold text-[40px] leading-[1.15] tracking-tight">
+    <div className="w-full px-4 py-16 sm:px-6 md:px-10 md:py-28 lg:py-42">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-8 md:grid-cols-2 md:gap-16">
+        <h2 className="text-3xl font-bold leading-[1.15] tracking-tight text-[#003557] sm:text-4xl lg:text-[40px]">
           Frequently Asked
           <br />
           Questions
         </h2>
 
-        {/* Accordion list */}
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex w-full flex-col gap-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             const shape = shapes[index % shapes.length];
@@ -67,17 +64,17 @@ function Faq() {
             return (
               <div
                 key={faq.question}
-                className="bg-[#F2F2F3] rounded-xl px-6 py-5 transition-colors"
+                className="rounded-xl bg-[#F2F2F3] px-4 py-5 transition-colors sm:px-6"
               >
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
-                  className="w-full flex items-center gap-3 text-left"
+                  className="flex w-full items-start gap-3 text-left"
                 >
                   <ShapeIcon shape={shape} />
                   <span
-                    className={`text-[#0F1B2B] font-semibold text-[18px] ${
-                      faq.link ? "underline decoration-[#3B82F6] text-[#1D2B3A]" : ""
+                    className={`text-base font-semibold text-[#0F1B2B] sm:text-[18px] ${
+                      faq.link ? "text-[#1D2B3A] underline decoration-[#3B82F6]" : ""
                     }`}
                   >
                     {faq.question}
@@ -86,10 +83,10 @@ function Faq() {
 
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-out ${
-                    isOpen ? "max-h-[400px] opacity-100 mt-3" : "max-h-0 opacity-0"
+                    isOpen ? "mt-3 max-h-[400px] opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-[#6B7280] text-[15px] leading-relaxed pl-6">
+                  <p className="pl-6 text-sm leading-relaxed text-[#6B7280] sm:text-[15px]">
                     {faq.answer}
                   </p>
                 </div>

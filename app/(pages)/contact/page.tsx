@@ -34,10 +34,12 @@ function page() {
   return (
     <div>
       <div
-        className="h-[90.8vh] flex items-center justify-center bg-no-repeat bg-cover w-full "
+        className="flex h-[90.8vh] w-full items-center justify-center bg-cover bg-center bg-no-repeat px-4"
         style={{ backgroundImage: `url(${contactus.contact.src})` }}
       >
-        <p className="text-[52px] font-bold text-white">Contact Us</p>
+        <p className="animate-fade-up text-center text-[32px] font-bold text-white sm:text-[40px] md:text-[52px]">
+          Contact Us
+        </p>
       </div>
 
       <div className="flex flex-col gap-2  h-[20vh] text-white pl-14 pt-20">
@@ -56,7 +58,7 @@ function page() {
           return (
             <div
               key={index}
-              className="flex flex-col gap-6 p-6 rounded-xl bg-[#EAF3FC]"
+              className="hover-lift flex flex-col gap-6 rounded-xl bg-[#EAF3FC] p-6"
             >
               <div className="h-11 w-11 rounded-lg bg-[#0B2A4A] flex items-center justify-center">
                 <Icon size={20} className="text-white" />

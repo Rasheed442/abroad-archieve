@@ -1,30 +1,31 @@
 import { hero } from "@/constants";
 import SubHeader from "@/Reusables/SubHeader";
 
-
 function Hero() {
   return (
     <>
       <div
-      className="h-[90.8vh] flex items-center justify-center bg-no-repeat bg-cover w-full "
-      style={{ backgroundImage: `url(${hero.src})` }}
-    >
-      <div className="text-center w-[50%]">
-        <p className="text-[48px] font-bold text-white">
-          Study Abroad Made Simple. Dreams Made Possible.
-        </p>
-        <span className="text-[19px]  font-medium text-white mt-4 block">
-          Discover universities, scholarships, and expert guidance to help
-          you study, live, and succeed abroad — from application to arrival.
-        </span>
-        <button className="border border-[#ffff] bg-[#003557] py-4 rounded-full cursor-pointer px-4 text-[16px]  mt-6 text-white font-medium">
-          Start Your Journey
-        </button>
+        className="h-[90.8vh] min-h-[560px] flex items-center justify-center bg-no-repeat bg-cover bg-center w-full px-4"
+        style={{ backgroundImage: `url(${hero.src})` }}
+      >
+        <div className="text-center w-full sm:w-[85%] md:w-[65%] lg:w-[50%]">
+          <p className="text-[28px] sm:text-[36px] md:text-[48px] font-bold text-white leading-tight">
+            Study Abroad Made Simple. Dreams Made Possible.
+          </p>
+          <span className="text-[15px] sm:text-[17px] md:text-[19px] font-medium text-white mt-4 block">
+            Discover universities, scholarships, and expert guidance to help
+            you study, live, and succeed abroad — from application to arrival.
+          </span>
+          <button className="border border-[#ffff] bg-[#003557] py-3 md:py-4 rounded-full cursor-pointer px-6 md:px-4 text-[15px] md:text-[16px] mt-6 text-white font-medium">
+            Start Your Journey
+          </button>
+        </div>
       </div>
-    </div>
-    <SubHeader title={"Our Comprehensive Services"} subtitle={"Complete support for every stage of your journey to studying abroad."}/>
+      <SubHeader
+        title={"Our Comprehensive Services"}
+        subtitle={"Complete support for every stage of your journey to studying abroad."}
+      />
     </>
-  
   );
 }
 
