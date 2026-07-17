@@ -10,21 +10,31 @@ interface FaqItem {
 
 const faqs: FaqItem[] = [
   {
-    question: "How do I start my journey abroad?",
+    question: "Why should I choose AbroadAchieve?",
     answer:
-      "It helps to do a little research before you speak to us. Once you do some research, you will get an idea of the subject areas that interest you the most. You could look at some course descriptions, university reviews and their locations. You can also start a wish list of your preferences and begin to narrow down your selection. Research can also include asking your friends and family if they have studied abroad. Post a message on your timeline on Facebook and you may be surprised at how many people have experience of an international education."
+      "We provide personalized, end-to-end support, from choosing the right university and preparing your application to securing your student visa and settling abroad. Our goal is to make studying abroad simple, -transparent, and successful."
   },
   {
-    question: "Do I need to sit for IELTS Exam?",
+    question: "How do I start my study Abroad journey?",
     answer:
-      "It is always a good idea to brush up your English language skills to ensure you can keep up with what your lecturers are saying. This will be helpful, especially if English is not your first language. You can try watching English TV news and talk shows, reading books or listening to podcasts where the language is more formal. You can also have some fun learning the local slang in your study destination.",
+      "The first step is to book a consultation with our education advisors. We’ll assess your academic background, career goals, budget, and preferred destination, then recommend the best universities and courses for you.",
     link: true
   },
   {
-    question: "Do you help with navigations?",
+    question: "How long does the study abroad application process take?",
     answer:
-      "AbroadAchieve can provide you with some information to help make sure you are well positioned to navigate this process with the authorised migration departments."
-  }
+      "Timelines vary depending on your chosen university, course, and destination. Most applications take several weeks to a few months.Starting early gives you more options and increases your chances of securing admission and a visa."
+  },
+  {
+    question: "Do you help with scholarships and student visas?",
+    answer:
+      "Yes. We assist with scholarship opportunities, university applications, student visa documentation, interview preparation, and pre-departure guidance to give you the best chance of success"
+  },
+  {
+    question: "Do I need IELTS or another English proficiency test? ",
+    answer:
+      "Not always. While many universities require IELTS, TOEFL, or PTE, some institutions accept alternative qualifications or offer IELTS waivers depending on your level previous education and chosen destination. We’ll help you determine the best option. "
+  },
 ];
 
 const shapes = ["circle", "diamond", "triangle"] as const;
@@ -69,7 +79,7 @@ function Faq() {
                 <button
                   onClick={() => toggle(index)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-start gap-3 text-left"
+                  className="flex w-full items-center gap-3 text-left"
                 >
                   <ShapeIcon shape={shape} />
                   <span

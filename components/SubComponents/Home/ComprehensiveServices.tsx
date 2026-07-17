@@ -10,37 +10,37 @@ function ComprehensiveServices() {
       icon: homeComServices.serv1,
       title: "University & Course Selection",
       description:
-        "Personalized guidance to find universities and courses that match your academic profile, interests, and career goals."
+        "Find the right universities and courses abroad based on your academic background, career goals, budget, and preferred study destination."
     },
     {
       icon: homeComServices.serv2,
       title: "Application Assistance",
       description:
-        "Complete support with document review, application timeline management, essay writing, and deadline tracking."
+        "Get expert support with your admission documents, personal statement, essay writing, application forms, and university submission deadlines."
     },
     {
       icon: homeComServices.serv3,
       title: "Visa & Interview Support",
       description:
-        "Expert guidance on visa documentation, interview preparation, and embassy procedures for major destinations."
+        "Prepare confidently with step-by-step student visa guidance, document review, interview coaching, and embassy application support."
     },
     {
       icon: homeComServices.serv4,
       title: "Pre-Departure Briefing",
       description:
-        "Comprehensive preparation for accommodation, travel arrangements, cultural orientation, and settling in abroad."
+        "Get fully prepared for travel, accommodation, airport arrival, student life, culture, and everything you need before moving abroad."
     },
     {
       icon: homeComServices.serv5,
       title: "Scholarship Advising",
       description:
-        "Guidance on finding and securing scholarships, financial aid, and funding opportunities for your studies."
+        "Discover suitable scholarships, grants, financial aid options, and funding opportunities that can make studying abroad more affordable."
     },
     {
       icon: homeComServices.serv6,
       title: "Ongoing Support",
       description:
-        "Continuous assistance throughout your journey, from acceptance to arrival and beyond."
+        "Receive continuous guidance from admission to visa approval, travel preparation, arrival, and settling into your new country."
     }
   ];
 
@@ -74,22 +74,24 @@ function ComprehensiveServices() {
           <Image
             src={whoweare}
             alt="who we are"
-            // fill
+            fill
             className="object-cover "
-            height={500}
-            width={800}
+            // height={1000}
+            // width={1000}
           />
         </div>
-        <div className="bg-[#003557] flex flex-col gap-5 md:gap-7 justify-center items-start p-6 md:p-8 md:px-14 py-10 md:py-8">
+        <div className="bg-[#003557] flex flex-col gap-3 md:gap-7 justify-center items-start p-6 md:p-8 md:px-14 py-10 md:py-8">
           <p className="text-white text-[26px] pt-8 md:pt-0 md:text-[36px] font-bold">
             Who are we
           </p>
           <span className="text-white font-normal max-w-full md:max-w-350 text-[15px] md:text-[18px] leading-relaxed">
-            We are a trusted study abroad platform committed to helping
-            students access world-class education opportunities across top
-            global destinations. Our role goes beyond admissions — we serve
-            as long-term partners, guiding students through every stage of
-            their international education journey.
+            At AbroadAchieve, we believe studying abroad is more than earning a degree, it’s about discovering opportunities that 
+            shape your future. We are a trusted study abroad consultancy dedicated to helping students achieve their academic and career
+             goals through personalized guidance and end-to-end support.
+          </span>
+          <span className="text-white font-normal max-w-full md:max-w-350 text-[15px] md:text-[18px] leading-relaxed">
+           Whether you’re pursuing undergraduate, postgraduate, or professional studies, AbroadAchieve is committed to making your 
+           international education journey smooth, transparent, and successful.
           </span>
           <button className="bg-white rounded-lg text-[#003557] text-[15px] md:text-[16px] font-medium px-4 py-3 mt-2 md:mt-4">
             Read more

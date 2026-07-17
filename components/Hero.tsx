@@ -10,11 +10,12 @@ function Hero() {
       >
         <div className="text-center w-full sm:w-[85%] md:w-[65%] lg:w-[50%]">
           <p className="text-[28px] sm:text-[36px] md:text-[48px] font-bold text-white leading-tight">
-            Study Abroad Made Simple. Dreams Made Possible.
+            Your Global Education Journey Starts Here.
           </p>
           <span className="text-[15px] sm:text-[17px] md:text-[19px] font-medium text-white mt-4 block">
-            Discover universities, scholarships, and expert guidance to help
-            you study, live, and succeed abroad — from application to arrival.
+         Study abroad with confidence through expert university admissions, scholarship
+guidance, visa support, and personalized counseling designed to help you succeed
+from application to arrival.
           </span>
           <button className="border border-[#ffff] bg-[#003557] py-3 md:py-4 rounded-full cursor-pointer px-6 md:px-4 text-[15px] md:text-[16px] mt-6 text-white font-medium">
             Start Your Journey

@@ -9,37 +9,37 @@ function StudyDestination() {
       image: australia,
       title: "Australia",
       description:
-        "Australia universities and colleges provides their prospective students with the .."
+        " Australia is a great choice if you're looking for quality education and a balanced lifestyle."
     },
     {
       image: canada,
       title: "Canada",
       description:
-        "Canada universities and colleges provides their prospective students with the ..."
+        "For many international students, Canada ticks all the boxes.  Canada is a destination worth it. "
     },
     {
       image: us,
       title: "USA",
       description:
-        "United States universities and colleges provides their prospective students with the ..."
+        "The USA is home to some of the world's most respected universities and offers wide variety."
     },
     {
       image: australia,
-      title: "Australia",
+      title: "United Kingdom",
       description:
-        "Australia universities and colleges provides their prospective students with the .."
+        "The UK has remained a favourite destination for international students for years."
     },
     {
       image: canada,
-      title: "Canada",
+      title: "NEW ZEALAND",
       description:
-        "Canada universities and colleges provides their prospective students with the ..."
+        "If you're looking for a peaceful study environment without compromising on quality."
     },
     {
       image: us,
-      title: "USA",
+      title: "MALTA",
       description:
-        "United States universities and colleges provides their prospective students with the ..."
+        "Malta has become one of Europe's fastest-growing study destinations."
     }
   ];
 

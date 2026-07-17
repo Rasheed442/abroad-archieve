@@ -4,11 +4,11 @@ import React from "react";
 
 function page() {
   const featureList = [
-    "Independent",
-    "Sensitive to the requirements of the universities",
-    "Designed to match your own needs",
-    "The best expert advice on courses",
-    "Study destinations including the UK and Europe, Australia, New Zealand, Canada, USA and the UAE."
+    "Independent study abroad advice",
+    "University requirement guidance",
+    "Personalized course and destination matching.",
+    "Expert support on courses and applications.",
+    "Study destinations: UK, Europe, Australia, New Zealand, Canada, USA, and UAE."
   ];
 
   return (
@@ -47,16 +47,8 @@ function page() {
             <p className="text-[#003557] text-[26px] md:text-[36px] font-bold">
               Visa Lodgement
             </p>
-            <span className="text-[#727272] font-normal text-[15px] md:text-[18px] w-full md:w-150 leading-relaxed">
-              We are a dedicated agency specializing in recruiting students for
-              international schools in the UK, Canada, Australia, and New Zealand.
-              With over 7 years of experience, we pride ourselves on guiding
-              students smoothly through the application process to help them
-              achieve their educational goals abroad. Our commitment to excellence
-              is reflected in our 90% customer satisfaction rating, demonstrating
-              the trust and success we've built with students and families. We are
-              passionate about opening doors to global education opportunities and
-              supporting every step of the journey.
+            <span className="text-[#727272] font-normal text-[15px] md:text-[18px] w-full md:w-120 leading-relaxed">
+           We guide students through the visa applicationprocess with proper document review, application support, and preparation for embassy requirements, helping them submit with confidence.
             </span>
           </div>
           <div className="relative w-full max-w-[500px] aspect-square order-1 md:order-2">
@@ -73,19 +65,10 @@ function page() {
             <p className="text-[#003557] text-[26px] md:text-[36px] font-bold">
               Career Counselling
             </p>
-            <span className="text-[#727272] font-normal text-[15px] md:text-[18px] w-full md:w-150 leading-relaxed">
-              Throughout our years of existence as a Registered and Certified
-              Educational Agency, we've been always indulging in accurate daily
-              research with both our partners and others Universities around the
-              globe, so as to obtain a direct and genuine information or update
-              from schools to verify their various policies and requirements. With
-              this process, we can as well provide you with an extensive and sound
-              counselling services that will assist you defeat your academic
-              challenges, such as improving in performance, withdrawing from
-              semester, navigating policies or procedures and financial issues. We
-              also organized an interacting session where our prospective students
-              or applicants can have a one-on-one conversation directly with our
-              partners schools' representatives worldwide.
+            <span className="text-[#727272] font-normal text-[15px] md:text-[18px] w-full md:w-120 leading-relaxed">
+            We provide personalized career counselling to help students choose the right course,
+university, and study destination based on their academic background, goals, and
+future career plans.
             </span>
           </div>
         </div>

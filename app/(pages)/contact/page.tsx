@@ -6,23 +6,23 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 
 function page() {
-  const contactOptions = [
+   const contactOptions = [
     {
       icon: HiOutlineMail,
-      title: "Chat to sales",
-      lines: ["Speak to our friendly team.", "ausvisastudy@gmail.com"]
+      title: "Admissions Enquiries",
+      lines: ["Speak with our admissions experts about studying abroad.", "ausvisastudy@gmail.com"]
     },
     {
       icon: BiMessageRoundedDots,
-      title: "Chat to support",
-      lines: ["We're here to help.", "+234 808 995 3598"]
+      title: "Student Support",
+      lines: ["Need assistance? Our support team is ready to help.", "+234 808 995 3598"]
     },
     {
       icon: HiOutlineLocationMarker,
-      title: "Visit us",
+      title: "Visit Our Office",
       lines: [
-        "Visit our office HQ.",
-        "22, Unity close Balogun Estate Oreyo, ikorodu Lagos, Nigeria"
+        "Meet with our advisors in person.",
+        "22, Unity close Balogun EstateOreyo, ikorodu Lagos, Nigeria"
       ]
     },
     {
@@ -37,8 +37,8 @@ function page() {
         className="flex h-[90.8vh] w-full items-center justify-center bg-cover bg-center bg-no-repeat px-4"
         style={{ backgroundImage: `url(${contactus.contact.src})` }}
       >
-        <p className="animate-fade-up text-center text-[32px] font-bold text-white sm:text-[40px] md:text-[52px]">
-          Contact Us
+        <p className="animate-fade-up text-center text-[32px] md:w-[50%] font-bold text-white sm:text-[40px] md:text-[52px]">
+          Let’s Make Your Study Abroad Dream a Reality.
         </p>
       </div>
 
