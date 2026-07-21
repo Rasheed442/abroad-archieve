@@ -80,7 +80,7 @@ function ComprehensiveServices() {
             // width={1000}
           />
         </div>
-        <div className="bg-[#003557] flex flex-col gap-3 md:gap-7 justify-center items-start p-6 md:p-8 md:px-14 py-10 md:py-8">
+        <div className="bg-[#003557] flex flex-col gap-3 md:gap-7 justify-center items-start p-6 md:p-8 md:px-14 py-10 md:py-28">
           <p className="text-white text-[26px] pt-8 md:pt-0 md:text-[36px] font-bold">
             Who are we
           </p>
@@ -93,9 +93,9 @@ function ComprehensiveServices() {
            Whether you’re pursuing undergraduate, postgraduate, or professional studies, AbroadAchieve is committed to making your 
            international education journey smooth, transparent, and successful.
           </span>
-          <button className="bg-white rounded-lg text-[#003557] text-[15px] md:text-[16px] font-medium px-4 py-3 mt-2 md:mt-4">
+          {/* <button className="bg-white rounded-lg text-[#003557] text-[15px] md:text-[16px] font-medium px-4 py-3 mt-2 md:mt-4">
             Read more
-          </button>
+          </button> */}
         </div>
       </div>
 

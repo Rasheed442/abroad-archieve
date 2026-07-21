@@ -17,9 +17,14 @@ function Hero() {
 guidance, visa support, and personalized counseling designed to help you succeed
 from application to arrival.
           </span>
-          <button className="border border-[#ffff] bg-[#003557] py-3 md:py-4 rounded-full cursor-pointer px-6 md:px-4 text-[15px] md:text-[16px] mt-6 text-white font-medium">
+          <a
+            href="https://api.whatsapp.com/message/XJKVB5QOJ4WPN1?autoload=1&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-[#ffff] bg-[#003557] py-3 md:py-4 rounded-full cursor-pointer px-6 md:px-4 text-[15px] md:text-[16px] mt-6 text-white font-medium inline-block"
+          >
             Start Your Journey
-          </button>
+          </a>
         </div>
       </div>
       <SubHeader

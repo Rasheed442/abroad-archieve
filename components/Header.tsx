@@ -40,12 +40,14 @@ function Header() {
               </Link>
             ))}
           </div>
-          <button className="bg-[#003557] text-white py-2 px-4 rounded shrink-0 cursor-pointer" onClick={() => {
-            router.push("/contact");
-            setMenuOpen(false);
-          }}>
+          <a
+            href="https://calendly.com/abroadachieve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#003557] text-white py-2 px-4 rounded shrink-0 cursor-pointer inline-block"
+          >
             Book an Appointment
-          </button>
+          </a>
         </div>
 
         {/* Mobile menu toggle */}
@@ -78,12 +80,14 @@ function Header() {
               {link.label}
             </Link>
           ))}
-          <button className="bg-[#003557] text-white py-2 px-4 rounded mt-2 w-full cursor-pointer" onClick={() => {
-            router.push("/contact");
-            setMenuOpen(false);
-          }}>
+          <a
+            href="https://calendly.com/abroadachieve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#003557] text-white py-2 px-4 rounded mt-2 w-full cursor-pointer inline-block text-center"
+          >
             Book an Appointment
-          </button>
+          </a>
         </div>
       </div>
     </div>
