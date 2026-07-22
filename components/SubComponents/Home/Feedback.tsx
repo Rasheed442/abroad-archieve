@@ -10,8 +10,10 @@ interface Testimonial {
   avatar: string;
   photo: string;
   quote: string;
-  role: string;
+  programme: string;
   name: string;
+  university: string;
+  intake: string;
 }
 
 const testimonials: Testimonial[] = [
@@ -19,33 +21,41 @@ const testimonials: Testimonial[] = [
     avatar: fed1.src,
     photo: fed1.src,
     quote:
-      "Throughout the process, I find Abroad Achieve very helpful, informative and their work rate very effective. I recommend them",
-    role: "Administration Officer,",
-    name: "Babatunde Wale"
+      "Throughout the process, I find Abroad Achieve very helpful, informative and their work rate very effective.I recommend them",
+    programme: "Master of Research in International Relations",
+    name: "Titilayo",
+    university: "University of wolverhampton united kingdom",
+    intake: "January 2025"
   },
   {
     avatar: fed2.src,
     photo: fed2.src,
     quote:
       "The team made a stressful application process feel simple. Every question was answered quickly and clearly.",
-    role: "Software Engineer,",
-    name: "Amaka Johnson"
+    programme: "Master of Public Health and Health Promotion",
+    name: "Latifat",
+    university: "Robert Gordon University, Scotland",
+    intake: "September 2025"
   },
   {
     avatar: fed3.src,
     photo: fed3.src,
     quote:
       "From my first consultation to visa approval, Abroad Achieve was with me every step. Truly grateful for their guidance.",
-    role: "Marketing Lead,",
-    name: "Ifeoma Chukwu"
+    programme: "Master of Research in Logistics and Supply Chain Management",
+    name: "Sekinat",
+    university: "University of Greater Manchester",
+    intake: "January 2026"
   },
   {
     avatar: fed4.src,
     photo: fed4.src,
     quote:
       "Professional, patient, and always available. They turned a confusing process into a clear, guided journey.",
-    role: "Graduate Student,",
-    name: "David Okafor"
+    programme: "Master of Health Promotion and Public Health",
+    name: "Eniola",
+    university: "Ulster University, Birmingham Campus",
+    intake: "January 2026"
   }
 ];
 
@@ -103,7 +113,7 @@ function Feedback() {
               return (
                 <div
                   key={t.name}
-                  className="absolute h-[260px] w-[210px] sm:h-[340px] sm:w-[270px] md:h-[500px] md:w-[400px] rounded-2xl shadow-md transition-all duration-500 ease-out"
+                  className="absolute h-[260px] w-[210px] sm:h-[340px] sm:w-[270px] md:h-[500px] md:w-[400px]  transition-all duration-500 ease-out"
                   style={{
                     // Use CSS var so we can switch offsets responsively without JS resize listeners
                     ["--mx" as any]: `${mobileStyle.x}px`,
@@ -125,7 +135,7 @@ function Feedback() {
                       src={t.photo}
                       alt={t.name}
                       fill
-                      className="object-cover rounded-2xl"
+                      className="object-contain rounded-2xl"
                       sizes="(max-width: 767px) 270px, 400px"
                     />
                   </div>
@@ -173,11 +183,14 @@ function Feedback() {
             <div className="h-px w-full max-w-xl bg-gray-200" />
 
             {/* Name + role */}
-            <div key={`meta-${activeIndex}`} className="feedback-fade text-[#33415C]">
-              <p className="text-[15px] md:text-[17px] leading-snug">{active.role}</p>
+            <div key={`meta-${activeIndex}`} className="feedback-fade text-[#33415C] flex flex-col gap-1">
               <p className="text-[15px] md:text-[17px] font-medium leading-snug">
-                {active.name}
+               Name: {active.name}
               </p>
+                            <p className="text-[15px] md:text-[17px] leading-snug">University: {active.university}</p>
+                            <p className="text-[15px] md:text-[17px] leading-snug">Programme: {active.programme}</p>
+                            <p className="text-[15px] md:text-[17px] leading-snug">Intake: {active.intake}</p>
+
             </div>
 
             {/* Nav arrows */}
