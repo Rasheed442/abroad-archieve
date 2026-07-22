@@ -113,7 +113,7 @@ function Feedback() {
               return (
                 <div
                   key={t.name}
-                  className="absolute h-[260px] w-[210px] sm:h-[340px] sm:w-[270px] md:h-[500px] md:w-[400px]  transition-all duration-500 ease-out"
+                  className="absolute h-[300px] w-[300px] sm:h-[340px] sm:w-[270px] md:h-[500px] md:w-[400px]  transition-all duration-500 ease-out"
                   style={{
                     // Use CSS var so we can switch offsets responsively without JS resize listeners
                     ["--mx" as any]: `${mobileStyle.x}px`,
